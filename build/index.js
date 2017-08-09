@@ -4,6 +4,10 @@ var _aotoo = require('aotoo');
 
 var _aotoo2 = _interopRequireDefault(_aotoo);
 
+var _common = require('./lib/common');
+
+var _common2 = _interopRequireDefault(_common);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /*
@@ -15,16 +19,5 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  $: jquery2
  */
 
-var isClient = typeof window !== 'undefined';
-var context = function () {
-  return isClient ? window : global;
-}() || {};
-require('./lib/common');
-
-
-var Aotoo = context.Aotoo;
-if (!Aotoo) {
-  Aotoo = context.Aotoo = _aotoo2.default;
-}
-
-module.exports = Aotoo;
+require('aotoo-web-widgets');
+module.exports = _aotoo2.default;
