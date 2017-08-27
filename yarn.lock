@@ -61,15 +61,15 @@ aotoo-inject@^1.0.7:
     blueimp-md5 "^2.7.0"
     fkp-sax "^1.5.19"
 
-aotoo-web-widgets@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/aotoo-web-widgets/-/aotoo-web-widgets-1.0.1.tgz#f24309711e7f0bce169a834c62aa1827ff51fc18"
+aotoo-web-widgets@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/aotoo-web-widgets/-/aotoo-web-widgets-1.0.5.tgz#0a2cf4a2abd92c42b613d55f9dc25d6cdc42ff95"
   dependencies:
     path "^0.12.7"
 
-aotoo@^1.2.12:
-  version "1.2.12"
-  resolved "https://registry.yarnpkg.com/aotoo/-/aotoo-1.2.12.tgz#a0c3ac66bef4d3251e1947a581bf8a60d2070c61"
+aotoo@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/aotoo/-/aotoo-2.0.1.tgz#fa71a4068957de3ae3f45ac0bf5b49d24ab82bc1"
   dependencies:
     aotoo-inject "^1.0.7"
     lodash.clonedeep "^4.5.0"
@@ -79,7 +79,8 @@ aotoo@^1.2.12:
     lodash.isplainobject "^4.0.6"
     lodash.merge "^4.6.0"
     lodash.uniqueid "^4.0.1"
-    react-combinex "^1.0.34"
+    path "^0.12.7"
+    react-combinex "^1.2.0"
 
 aproba@^1.0.3:
   version "1.1.1"
@@ -2674,9 +2675,9 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-combinex@^1.0.34:
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/react-combinex/-/react-combinex-1.1.9.tgz#f242771f20e6f067c243fd5e4a6b393d1f10f702"
+react-combinex@^1.2.0:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/react-combinex/-/react-combinex-1.2.9.tgz#28d0a2db427cba610600976256003d428b3ad842"
   dependencies:
     babel-preset-stage-0 "^6.24.1"
     fkp-sax "^1.5.10"
