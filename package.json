@@ -1,12 +1,13 @@
 {
   "name": "aotoo-common",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "react公共环境，适用于node及前端",
   "main": "./build/index.js",
   "license": "MIT",
   "dependencies": {
     "aotoo": "^2.0.1",
     "aotoo-web-widgets": "^1.0.5",
+    "cheerio": "^1.0.0-rc.2",
     "fkp-sax": "^1.5.10",
     "jquery": "^2.2.4",
     "lodash": "^4.0.0",
