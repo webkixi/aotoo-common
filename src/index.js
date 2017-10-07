@@ -1,13 +1,19 @@
-/*
- Aotoo
- react: React,
- reactDom: ReactDom,
- sax: SAX,
- _: lodash
- $: jquery2
- */
-
-import aotooBase, {combinex, CombineClass, wrap} from 'aotoo'
-import common from './lib/common'
+require('aotoo')
 require('aotoo-web-widgets')
-module.exports = aotooBase
+const lodash = require('lodash/lodash.min')
+const isClient = Aotoo.isClient
+
+var xquery
+if (isClient) {
+  xquery = require('jquery/dist/jquery.min')
+} else {
+  xquery = require('cheerio')
+}
+
+var context = ( C => C ? window : global)(isClient) || {}
+
+
+context.$ = xquery
+context._ = lodash
+
+module.exports = {}
