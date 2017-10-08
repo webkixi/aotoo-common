@@ -2,14 +2,13 @@
 
 require('aotoo');
 require('aotoo-web-widgets');
-var lodash = require('lodash/lodash.min');
 var isClient = Aotoo.isClient;
 
 var xquery;
 if (isClient) {
   xquery = require('jquery/dist/jquery.min');
 } else {
-  xquery = require('cheerio');
+  xquery = function xquery() {};
 }
 
 var context = function (C) {
@@ -17,6 +16,5 @@ var context = function (C) {
 }(isClient) || {};
 
 context.$ = xquery;
-context._ = lodash;
 
 module.exports = {};
