@@ -12,5 +12,6 @@ if (isClient) {
 var context = ( C => C ? window : global)(isClient) || {}
 
 context.$ = xquery
+context.jQuery = xquery
 
 module.exports = {}

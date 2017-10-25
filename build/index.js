@@ -16,5 +16,6 @@ var context = function (C) {
 }(isClient) || {};
 
 context.$ = xquery;
+context.jQuery = xquery;
 
 module.exports = {};

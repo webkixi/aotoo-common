@@ -1,6 +1,6 @@
 {
   "name": "aotoo-common",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "description": "react公共环境，适用于node及前端",
   "main": "./build/index.js",
   "license": "MIT",
