@@ -1,11 +1,11 @@
 {
   "name": "aotoo-common",
-  "version": "2.0.16",
+  "version": "2.0.17",
   "description": "react公共环境，适用于node及前端",
   "main": "./build/index.js",
   "license": "MIT",
   "dependencies": {
-    "aotoo": "^3.0.9",
+    "aotoo": "^3.0.10",
     "aotoo-web-widgets": "^1.0.17",
     "jquery": "^2.2.4"
   },
