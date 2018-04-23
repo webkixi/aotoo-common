@@ -1,21 +1,33 @@
 'use strict';
 
 require('aotoo');
+
 require('aotoo-web-widgets');
-var isClient = Aotoo.isClient;
 
-var xquery;
-if (isClient) {
-  xquery = require('jquery/dist/jquery.min');
-} else {
-  xquery = function xquery() {};
-}
+var _jquery = require('jquery');
 
-var context = function (C) {
-  return C ? window : global;
-}(isClient) || {};
+var _jquery2 = _interopRequireDefault(_jquery);
 
-context.$ = xquery;
-context.jQuery = xquery;
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-module.exports = {};
+React.render = ReactDom.render;
+Aotoo.context.$ = _jquery2.default;
+Aotoo.context.jQuery = _jquery2.default;
+
+// require('aotoo')
+// require('aotoo-web-widgets')
+// const isClient = Aotoo.isClient
+
+// var xquery
+// if (isClient) {
+//   xquery = require('jquery/dist/jquery.min')
+// } else {
+//   xquery = function(){}
+// }
+
+// var context = ( C => C ? window : global)(isClient) || {}
+
+// context.$ = xquery
+// context.jQuery = xquery
+
+// module.exports = {}

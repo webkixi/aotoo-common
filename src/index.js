@@ -1,17 +1,25 @@
-require('aotoo')
-require('aotoo-web-widgets')
-const isClient = Aotoo.isClient
+import 'aotoo'
+import 'aotoo-web-widgets'
+import jquery from 'jquery'
 
-var xquery
-if (isClient) {
-  xquery = require('jquery/dist/jquery.min')
-} else {
-  xquery = function(){}
-}
+React.render = ReactDom.render;
+Aotoo.context.$ = jquery
+Aotoo.context.jQuery = jquery
 
-var context = ( C => C ? window : global)(isClient) || {}
+// require('aotoo')
+// require('aotoo-web-widgets')
+// const isClient = Aotoo.isClient
 
-context.$ = xquery
-context.jQuery = xquery
+// var xquery
+// if (isClient) {
+//   xquery = require('jquery/dist/jquery.min')
+// } else {
+//   xquery = function(){}
+// }
 
-module.exports = {}
+// var context = ( C => C ? window : global)(isClient) || {}
+
+// context.$ = xquery
+// context.jQuery = xquery
+
+// module.exports = {}
